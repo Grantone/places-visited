@@ -23,7 +23,14 @@ $(document).ready(function() {
       var userDestinationInfo = new PlacesVisited(inputtedFirstLocation, inputtedLandMark,inputtedYear,inputtedNotes);
 
       $("ul#destination").append("<li><span class='details'>" + userDestinationInfo.location + "</span></li>");
-      
+      $(".details").last().click(function() {
+
+
+          $(".destinationUser").text(userDestinationInfo.location);
+          $(".landmarkUser").text(userDestinationInfo.landmark);
+          $(".visitedUser").text(userDestinationInfo.year);
+          $(".userNotes").text(userDestinationInfo.notes);
+        });
 
 
     });
