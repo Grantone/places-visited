@@ -20,7 +20,10 @@ $(document).ready(function() {
       var inputtedYear = $("input#timeOfYear").val();
       var inputtedNotes= $("input#destinationNotes").val();
 
-    
+      var userDestinationInfo = new PlacesVisited(inputtedFirstLocation, inputtedLandMark,inputtedYear,inputtedNotes);
+
+      
+
 
     });
   });
