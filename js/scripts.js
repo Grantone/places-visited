@@ -22,6 +22,7 @@ $(document).ready(function() {
 
       var userDestinationInfo = new PlacesVisited(inputtedFirstLocation, inputtedLandMark,inputtedYear,inputtedNotes);
 
+      $("ul#destination").append("<li><span class='details'>" + userDestinationInfo.location + "</span></li>");
       
 
 
